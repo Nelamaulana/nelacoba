@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulir Pendaftaran Pasien</title>
+</head>
+<body>
+
+  <div>
+    <h1>Formulir Pendaftaran Pasien</h1>
+  </div>
+
+  <div>
+    <form method="GET" action="#">
+      <table>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jk" value="Perempuan"> Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td>Hobi</td>
+          <td>
+            <input type="checkbox" name="hobi" value="Memasak"> Memasak
+            <input type="checkbox" name="hobi" value="Berenang"> Berenang
+            <input type="checkbox" name="hobi" value="Memancing"> Memancing
+            <input type="checkbox" name="hobi" value="Menulis"> Menulis
+          </td>
+        </tr>
+        <tr>
+          <td>Asal Kota</td>
+          <td>
+            <select name="kota">
+              <option>Jombang</option>
+              <option>Lumajang</option>
+              <option>Malang</option>
+              <option>Lamongan</option>
+              <option>Madiun</option>
+              <option>Dieng</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Komentar</td>
+          <td><textarea name="komentar" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="KIRIM DATA" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+     <h2>Jadwal Dokter</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Jam Praktik</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Senin</td>
+                <td>08:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>09:00 - 11:00</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Langkah Pendaftaran</h2>
+    <ul>
+      <li>Isi formulir dengan lengkap.</li>
+      <li>Klik tombol "KIRIM DATA".</li>
+      <li>Tunggu konfirmasi melalui email.</li>
+    </ul>
+  </div>
+
+  <div>
+    <p>Kontak: (0321) xxxxxxxx | 
+      <a href="https://unipdu.ac.id" target="_blank">Kunjungi Homepage UNIPDU</a>
+    </p>
+  </div>
+
+</body>
+</html>
