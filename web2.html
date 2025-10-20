@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pondok Pesantren Falahul Muhibbin</title>
+
+  <style>
+    /* RESET STYLE DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* HEADER */
+    .header {
+      background-color: #26bc60;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .header img {
+      width: 120px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* NAVIGASI */
+    .nav-bar {
+      background-color: #2f855a;
+      padding: 10px 0;
+    }
+
+    .nav-bar ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    .nav-bar li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
+    .nav-bar a:hover {
+      background-color: #38a169;
+      color: #fff;
+    }
+
+    /* BANNER */
+    .banner {
+      width: 100%;
+      height: 300px;
+      background: url('images/banner.logo.png') center/cover no-repeat;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .banner-text h2 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .banner-text p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    /* 🌿 LAYOUT KONTEN */
+    .layout-bawah {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+
+    .content-kiri {
+      flex: 3;
+      min-width: 300px;
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content-kiri h2 {
+      color: #2f855a;
+      margin-bottom: 10px;
+    }
+
+    .content-kiri p {
+      text-align: justify;
+    }
+
+    .sidebar-kanan {
+      flex: 1;
+      min-width: 250px;
+      background-color: #f1f8e9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .sidebar-kanan h2 {
+      color: #2f855a;
+      margin-bottom: 10px;
+    }
+
+    /*  FOOTER */
+    .footer {
+      background-color: #3f6068;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    /*  RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .nav-bar li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .banner {
+        height: 200px;
+      }
+
+      .banner-text h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--  HEADER -->
+    <header class="header">
+      <h1>Pondok Pesantren Falahul Muhibbin</h1>
+      <img src="c:\Users\Lelam\Downloads\logo.png.png" alt="Logo Pondok">
+    </header>
+
+    <!--  NAVBAR -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Program Kepesantrenan</a></li>
+        <li><a href="#">Visi & Misi</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+      </ul>
+    </nav>
+
+    <!--  BANNER -->
+    <div class="banner">
+      <div class="banner-text">
+        <h2>Selamat Datang di Pondok Pesantren Falahul Muhibbin</h2>
+        <p>Cerdaskan Dan Selamatkan Anak Dengan Pendidikan Berbasis Pesantren</p>
+        <p>(KH Nur Hadi)</p>
+      </div>
+    </div>
+
+    <!--  ISI HALAMAN -->
+    <div class="layout-bawah">
+      <div class="content-kiri">
+        <h2>Program Unggulan</h2>
+        <p>
+          Pondok Pesantren Falahul Muhibbin berkomitmen membentuk santri yang berilmu, berakhlak, dan mandiri.
+          Program unggulan kami mencakup tahfidzul Qur'an, kajian kitab kuning, dan English Course.
+        </p>
+      </div>
+
+      <div class="sidebar-kanan">
+        <h2>Informasi</h2>
+        <ul>
+          <li>Pendaftaran Santri Baru 2025</li>
+          <li>Jadwal Kajian Rutin Ahad Pahing</li>
+          <li>Kontak: 0821-4164-4491</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  FOOTER -->
+    <footer class="footer">
+      <p>Copyright © 2025 —
+        <strong>Nela Ulifatul Zahro Maulana</strong> (NIM. 4124010)
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
